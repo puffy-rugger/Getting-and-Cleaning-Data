@@ -40,6 +40,20 @@ allData <- cbind(subjectData, yData, xData)
 
 allData <- merge(allData, activityLabels, by="activity")
 
+c <- colnames(allData)
+
+for (j in 1:length(c))
+{
+    c[j] = gsub("\\(\\)", "", c[j])
+    c[j] = gsub("^t", "time", c[j])
+    c[j] = gsub("^f", "freq", c[j])
+    c[j] = gsub("-std()", "StdDev", c[j])
+    c[j] = gsub("-mean()", "Mean", c[j])
+    c[j] = gsub("Mag-", "Magnitude", c[j])
+}
+
+colnames(allData) <- c
+
 #Reorder the columns to bring activity and activity name together
 allData <- allData[c(1,69,2:69)]
 
