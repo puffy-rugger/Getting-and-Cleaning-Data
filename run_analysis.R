@@ -46,5 +46,5 @@ allData <- allData[c(1,69,2:69)]
 #3 Create second tidy dataset with mean of all the columns
 tidyDataSet <- aggregate(allData[4:69], by=list(allData$subject,allData$activityName), mean)
 
-write.table(tidyDataSet, "./TidyData.txt")
+write.table(tidyDataSet, "./TidyData.txt", row.name = FALSE)
 
