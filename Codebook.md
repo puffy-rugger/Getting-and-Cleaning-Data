@@ -1,4 +1,4 @@
-##Codebook.md
+## Codebook.md
 
 ### Assumptions
 
@@ -15,7 +15,7 @@ run_analysis.r script will process the files and create tidy data set. This scri
 4. Appropriately labels the data set with descriptive activity names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
-###Variables
+### Variables
 
 'subjectData', 'xTrain', 'yTrain', 'subjectTest', 'xTest', 'yTest', 'features', 'activityLabels' contain the data read from the files
 'xData', 'yData', 'subjectData' contain the data after it is merged
