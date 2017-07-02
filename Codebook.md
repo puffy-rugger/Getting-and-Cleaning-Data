@@ -17,7 +17,7 @@ run_analysis.r script will process the files and create tidy data set. This scri
 
 ### Variables
 
-'subjectData', 'xTrain', 'yTrain', 'subjectTest', 'xTest', 'yTest', 'features', 'activityLabels' contain the data read from the files
-'xData', 'yData', 'subjectData' contain the data after it is merged
-'allData' contain the data after merging training and testing datasets and contains only 'mean' and 'std' columns
+`subjectData`, `xTrain`, `yTrain`, `subjectTest`, `xTest`, `yTest`, `features`, `activityLabels` contain the data read from the files
+`xData`, `yData`, `subjectData` contain the data after it is merged
+`allData` contain the data after merging training and testing datasets and contains only `mean` and `std` columns
 
